@@ -1,0 +1,12 @@
+type Mutation{
+    updateUser(updateUserRequest : UpdateUserRequest) : UserResponse
+    deleteUser(id :Int) : String
+    createEvent(createEventRequest : CreateEventRequest) : EventResponse
+    updateEvent(updateEventRequest : UpdateEventRequest) : EventResponse
+    deleteEventById(id : Float) : String
+    deleteEventByCollegeAndName(collegeId : Float,eventName : String) : String
+    registerEvent(studentId : Float,eventId : Float) : RegistrationResponse
+    deleteRegistration(studentId: Float,eventId:Float) : String
+    postFeedback(createFeedbackRequest : CreateFeedbackRequest) : FeedbackResponse
+    deleteFeedback(feedbackId : Float) : String
+}

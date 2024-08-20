@@ -1,0 +1,57 @@
+type RegistrationResponse{
+    studentName : String
+    email : String
+    studentCollege : String
+    eventName : String
+    eventCollege : String
+    eventDate : String
+    eventLocation : String
+    type : Type
+    eventType : EventType
+}
+
+#union Profile = Student | Admin
+#type User{
+#    id : Float
+#    name : String
+#    email : String
+#    role : Role
+#    password : String
+##    profile : Profile
+#    #    role : String // This also works
+#}
+type UserResponse{
+    name : String
+    email : String
+    role : Role
+    collegeName : String
+    collegeLocation : String
+}
+
+type EventResponse{
+    name : String
+    date : String
+    location : String
+    maxRegistrationLimit : Int
+    currentRegistrations : Int
+    college : College
+    type : Type
+    eventType : EventType
+    registrationList : [RegistrationResponse]
+    feedbackList : [FeedbackResponse]
+}
+
+type College{
+    name : String
+    location : String
+}
+
+type FeedbackResponse{
+    studentName : String
+    studentCollegeName : String
+    email : String
+    eventName : String
+    eventCollege : String
+    eventDate : String
+    message : String
+ }

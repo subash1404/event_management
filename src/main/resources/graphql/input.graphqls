@@ -1,0 +1,32 @@
+input UpdateUserRequest{
+    name : String
+    email : String
+    college_id : Float
+}
+
+input CreateEventRequest{
+    name : String
+    date : String
+    location : String
+    maxRegistrationLimit : Int
+    collegeId : Float
+    adminId : Float
+    type : Type
+    eventType : EventType
+}
+
+input UpdateEventRequest{
+    name : String!
+    date : String
+    location : String
+    collegeId : Float!
+    maxRegistrationLimit : Int
+    type : Type
+    eventType : EventType
+}
+
+input CreateFeedbackRequest{
+    studentId : Float
+    eventId : Float
+    message : String
+}

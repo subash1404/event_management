@@ -1,0 +1,16 @@
+enum Type{
+    Intra_Event,
+    Inter_Event
+}
+
+enum EventType{
+    Symposium,
+    Hackathon,
+    Culturals,
+    WorkShops
+}
+
+enum Role{
+    Admin,
+    Student
+}

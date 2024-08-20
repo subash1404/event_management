@@ -1,0 +1,14 @@
+type Query{
+    firstQuery : String
+    findAllUsers : [UserResponse]
+    findUserById(id : Float) : UserResponse
+    findEvents(userId : Float) : [EventResponse]
+    findEventById(id : Float) : EventResponse
+    findEventByCollege(id : Float,studentId : Float) : [EventResponse]
+    findEventByLocation(location : String,studentId : Float) : [EventResponse]
+    findEventByDate(date : String,studentId : Float) : [EventResponse]
+    findEventByName(name : String,studentId : Float) : [EventResponse]
+    findEventByEventType(eventType : EventType,studentId : Float) : [EventResponse]
+}
+
+
