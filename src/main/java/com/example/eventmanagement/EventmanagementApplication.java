@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-@ComponentScan({"com.example.eventmanagement.query","com.example.eventmanagement.util","com.example.eventmanagement.security","com.example.eventmanagement.resolver","com.example.eventmanagement.services","com.example.eventmanagement.repositories","com.example.eventmanagement.mutation"})
+@ComponentScan({"com.example.eventmanagement.query","com.example.eventmanagement.util", "com.example.eventmanagement.filter","com.example.eventmanagement.resolver","com.example.eventmanagement.services","com.example.eventmanagement.repositories","com.example.eventmanagement.mutation","com.example.eventmanagement.config"})
 @EntityScan("com.example.eventmanagement.models")
 @EnableJpaRepositories("com.example.eventmanagement.repositories")
 public class EventmanagementApplication {

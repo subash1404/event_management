@@ -28,4 +28,5 @@ public class Admin {
 
     @OneToMany(mappedBy = "admin",cascade = {CascadeType.ALL})
     private List<Event> events;
+
 }

@@ -1,11 +1,8 @@
-package com.example.eventmanagement.security;
+package com.example.eventmanagement.config;
 
-import com.example.eventmanagement.util.JwtUtil;
-import lombok.RequiredArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
+import com.example.eventmanagement.filter.JwtAuthFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -13,10 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-import java.util.logging.Filter;
 
 @Configuration
 @EnableWebSecurity

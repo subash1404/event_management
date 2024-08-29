@@ -1,4 +1,4 @@
-package com.example.eventmanagement.security;
+package com.example.eventmanagement.config;
 
 import com.example.eventmanagement.models.User;
 import com.example.eventmanagement.repositories.UserRepository;
